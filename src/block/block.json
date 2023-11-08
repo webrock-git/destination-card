@@ -4,7 +4,7 @@
     "name": "toehold/destination-card",
     "version": "1.0.0",
     "title": "Destination Card",
-    "category": "toehold",
+    "category": "text",
     "description": "Toehold destination card for toehold theme",
     "example": {
         "attributes": {

@@ -1,6 +1,12 @@
 @import "../styles/mixin.scss";
 
 .wp-block-toehold-destination-card {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
     .toehold-card-wrapper {
         height: auto;
         text-align: center;

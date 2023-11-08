@@ -27,7 +27,12 @@ export default function save({ attributes }) {
 					<RichText.Content
 						tagName='a'
 						className='card-destination-page-link-btn'
-						value={attributes?.destinationPageLinkBtn}
+						value={attributes?.cardButtonLinkText}
+						{
+							...LinkAttributes(
+								attributes?.cardButtonLinkURL
+							)
+						}
 					/>
 				</div>
 				<div className='toehold-tour-content-wrapper'>

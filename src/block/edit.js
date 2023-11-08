@@ -34,8 +34,8 @@ export default function Edit({ attributes, setAttributes, clientId }) {
 						<RichText
 							tagName='a'
 							className='card-destination-page-link-btn'
-							value={attributes?.destinationPageLinkBtn}
-							onChange={(value) => setAttributes({ destinationPageLinkBtn: value })}
+							value={attributes?.cardButtonLinkText}
+							onChange={(value) => setAttributes({ cardButtonLinkText: value })}
 						/>
 					</div>
 					<div className='toehold-tour-content-wrapper'>
