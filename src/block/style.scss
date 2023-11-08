@@ -1,0 +1,203 @@
+@import "../styles/mixin.scss";
+
+.wp-block-toehold-destination-card {
+    .toehold-card-wrapper {
+        height: auto;
+        text-align: center;
+        border: 1px solid #E8EBF1;
+        background: #fff;
+    }
+
+    .toehold-card-image-wrapper {
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+        min-height: 280px;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &:before {
+            top: 0;
+            left: 0;
+            right: 0;
+            content: '';
+            z-index: -1;
+            height: 50%;
+            position: absolute;
+            background-image: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.50));
+        }
+    }
+
+    .card-destination-name {
+        color: #FFF;
+        line-height: 1;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        font-family: "Figtree", sans-serif;
+    }
+
+    .card-destination-region {
+        color: #FFF;
+        opacity: 0.8;
+        line-height: 1;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        font-family: "Figtree", sans-serif;
+    }
+
+    .card-destination-description {
+        color: #FFF;
+        text-align: center;
+        font-family: "Figtree", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 390px;
+        margin: 0 auto;
+        margin-top: 28px;
+        margin-bottom: 61px;
+    }
+
+    .card-destination-page-link-btn {
+        display: inline-flex;
+        padding: 14px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border: 2px solid #FFF;
+        background: #000000b3;
+        color: #FFF;
+        text-align: center;
+        font-family: "Figtree", sans-serif;
+        ;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #FFF;
+        }
+    }
+
+    .destination-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #E8EBF1;
+
+        .card-content-left {
+            text-align: left;
+            padding: 12px;
+
+            .card-tour-name {
+                color: #000;
+                font-family: "Figtree", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            .card-tour-type {
+                color: #9AA0AE;
+                font-family: "Figtree", sans-serif;
+                line-height: 1;
+                font-size: 16px;
+                font-weight: 500;
+                margin: 2px 0 10px;
+            }
+
+            .card-tour-price {
+                gap: 4px;
+                display: flex;
+                line-height: 1;
+                font-size: 14px;
+                font-weight: 500;
+                align-items: flex-end;
+                font-family: "Figtree", sans-serif;
+
+                .card-tour-price-label {
+                    color: #9AA0AE;
+                }
+
+                .card-tour-offer-price-value {
+                    color: #4DA1FF;
+                    font-weight: 700;
+                }
+
+                .card-tour-original-price-value {
+                    color: #BFC3CE;
+
+                    &.has-offer-price {
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+
+        .card-content-right {
+            text-align: right;
+            padding: 12px;
+            font-family: "Figtree", sans-serif;
+
+            .card-tour-dates {
+                color: #000;
+                line-height: 1;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: "Figtree", sans-serif;
+            }
+
+            .card-tour-duration {
+                color: #9AA0AE;
+                line-height: 1;
+                font-size: 14px;
+                font-weight: 600;
+                margin: 2px 0 8px;
+            }
+
+            .card-tour-page-link {
+                display: inline-flex;
+                padding: 4px 8px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: #FFF;
+                line-height: 1;
+                font-size: 16px;
+                font-weight: 700;
+                border-radius: 3px;
+                background: #2D8EFF;
+                text-transform: uppercase;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: #FFF;
+                }
+            }
+        }
+    }
+
+    .card-footer {
+        padding: 10px;
+        font-family: "Figtree", sans-serif;
+
+        .card-footer-page-link {
+            font-family: inherit;
+            color: #4DA1FF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
